@@ -1,3 +1,4 @@
+
 import PropTypes from 'prop-types'
 import Color from './Color'
 import '../../stylesheets/ColorList.scss'
@@ -7,10 +8,7 @@ const ColorList = ({ colors=[], onRate=f=>f, onRemove=f=>f }) =>
         {(colors.length === 0) ?
             <p>No Colors Listed. (Add a Color)</p> :
             colors.map(color =>
-                <Color key={color.id}
-                    {...color}
-                       onRate={(rating) => onRate(color.id, rating)}
-                       onRemove={() => onRemove(color.id)} />
+                <Color key={color.id} {...color}  onRate={(rating) => onRate(color.id, rating)} onRemove={() => onRemove(color.id)} />
             )
         }
     </div>
