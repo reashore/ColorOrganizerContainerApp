@@ -1,9 +1,10 @@
-const second = 1000,
-    minute = 60 * second,
-    hour = 60 * minute,
-    day = 24 * hour,
-    timeframe = {second, minute, hour, day},
-    breakpoints = {
+
+const second = 1000
+const minute = 60 * second
+const hour = 60 * minute
+const day = 24 * hour
+const timeframe = {second, minute, hour, day}
+const breakpoints = {
         second: 60,
         minute: 60,
         hour: 24,

@@ -1,3 +1,4 @@
+
 import { createStore, combineReducers, applyMiddleware } from 'redux'
 import { colors, sort } from './reducers'
 import stateData from '../../data/initialState'

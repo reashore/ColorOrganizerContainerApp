@@ -1,3 +1,4 @@
+
 import '../stylesheets/APP.scss'
 import { Component } from 'react'
 import PropTypes from 'prop-types'
@@ -5,7 +6,6 @@ import { Menu, NewColor, Colors } from './containers'
 import { sortFunction } from '../lib/array-helpers'
 
 class App extends Component {
-
     getChildContext() {
         return {
             store: this.props.store
@@ -13,9 +13,7 @@ class App extends Component {
     }
 
     componentWillMount() {
-        this.unsubscribe = store.subscribe(
-            () => this.forceUpdate()
-        )
+        this.unsubscribe = store.subscribe(() => this.forceUpdate())
     }
 
     componentWillUnmount() {
